@@ -1,0 +1,30 @@
+{
+  "ver": "1.0.0",
+  "uuid": "436da023-959b-4837-b460-aa01996907de",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "subMetas": {
+    "luck_deng_02": {
+      "ver": "1.0.3",
+      "uuid": "e32799e2-6845-4905-8eac-e1deead5f1e0",
+      "rawTextureUuid": "436da023-959b-4837-b460-aa01996907de",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": 0,
+      "offsetY": -0.5,
+      "trimX": 0,
+      "trimY": 1,
+      "width": 424,
+      "height": 275,
+      "rawWidth": 424,
+      "rawHeight": 276,
+      "borderTop": 17,
+      "borderBottom": 18,
+      "borderLeft": 20,
+      "borderRight": 19,
+      "subMetas": {}
+    }
+  }
+}
