@@ -16,8 +16,9 @@ cc.Class({
         // ...
         subItemContent: cc.Node,
         prefabAddAlarmItem: cc.Prefab,
-        repeatUI: cc.Node,
+        alarmRepeat: cc.Node,
         alarmName: cc.Node,
+        alarmSound: cc.Node,
     },
 
     // use this for initialization
@@ -43,14 +44,16 @@ cc.Class({
             console.log(row);
             switch (row) {
                 case 0:{
-                    self.showRepeat();
+                    self.showAlarmRepeat();
                 }
                 break;
                 case 1:{
                     self.showAlarmName();
                 }
                 break;
-                case 2:
+                case 2:{
+                    self.showAlarmSound();
+                }
                 break;
                 case 3:
                 break;
@@ -59,13 +62,17 @@ cc.Class({
         });
     },
 
-    showRepeat: function () {
-        this.repeatUI.getComponent('RepeatUI').show();
+    showAlarmRepeat: function () {
+        this.alarmRepeat.getComponent('AlarmRepeat').show();
     },
 
     showAlarmName: function () {
         this.alarmName.getComponent('AlarmName').show();
-    }
+    },
+
+    showAlarmSound: function () {
+        this.alarmSound.getComponent('AlarmSound').show();
+    },
 
     // called every frame, uncomment this function to activate update callback
     // update: function (dt) {
