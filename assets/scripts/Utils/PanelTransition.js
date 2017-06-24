@@ -7,7 +7,7 @@ cc.Class({
 
     // use this for initialization
     onLoad: function () {
-        this.outOfWorld = cc.p(30000, 0);
+        this.outOfWorld = cc.p(30000, 30000);
         this.node.position = this.outOfWorld;
         let cbFadeOut = cc.callFunc(this.onFadeOutFinish, this);
         let cbFadeIn = cc.callFunc(this.onFadeInFinish, this);
